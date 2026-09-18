@@ -21,29 +21,43 @@
         .card {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
+            gap: 16px;
+            margin-bottom: 16px;
             text-decoration: none;
             color: inherit;
-            padding: 8px;
+            padding: 10px 12px;
             border-radius: 10px;
-            transition: background-color 0.2s ease, transform 0.2s ease;
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+            transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .card:hover {
-            background-color: #f0f0f0;
+            background-color: #f7f7f7;
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
-        /* Image styles */
-        .card img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            background-color: #fff;
+        /* Image Frame - Small, uncropped display */
+        .card .img-container {
+            width: 72px;
+            height: 72px;
+            min-width: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
             border-radius: 8px;
-            box-sizing: border-box;
-            border: 1px solid #eaeaea;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Displays the full image inside the frame without cropping */
+        .card img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
         }
 
         /* Text block on the right */
@@ -52,21 +66,21 @@
         }
 
         .details h4 {
-            margin: 0 0 5px 0;
-            font-size: 1.1rem;
+            margin: 0 0 4px 0;
+            font-size: 1rem;
             color: #111;
         }
 
         .details p {
             margin: 0;
             color: #555;
-            font-size: 0.95rem;
+            font-size: 0.88rem;
         }
 
         .details .link-label {
             display: inline-block;
             margin-top: 6px;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             color: #0066cc;
@@ -79,7 +93,7 @@
         }
 
         h3 {
-            margin-top: 30px;
+            margin-top: 32px;
             border-bottom: 2px solid #eee;
             padding-bottom: 8px;
         }
@@ -102,7 +116,9 @@
         <h3>Films</h3>
 
         <a class="card" href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjdhunAp1tS2_sCHf1rZUqd94v0mLoq2nHrAYFoyBWlg&s=10" alt="Inception">
+            <div class="img-container">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" alt="Inception">
+            </div>
             <div class="details">
                 <h4>Inception</h4>
                 <p>Complex logic, structural perfection, and pure visual depth.</p>
@@ -111,7 +127,9 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt1285016/" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkPBxhQ3Rbr5OCRZEnuXghj6X2uYkBvTl5ZVkRvU1cxxEdPw2E4F7UYI&s=10" alt="The Social Network">
+            <div class="img-container">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGUyZDUxZjUtMmIzMC00MzlmLTg4MGItZWJmMzBhZjE0Mjc1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Social Network">
+            </div>
             <div class="details">
                 <h4>The Social Network</h4>
                 <p>Speed, raw ambition, and brilliant intellectual architecture.</p>
@@ -120,7 +138,9 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt15398776/" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZw_Fuuti9hPEculiwVo7aAHmzqjsr8sN1tQs9C-YTWg&s=10" alt="Oppenheimer">
+            <div class="img-container">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_FMjpg_UX1000_.jpg" alt="Oppenheimer">
+            </div>
             <div class="details">
                 <h4>Oppenheimer</h4>
                 <p>Quantum physics, classified architecture, and unrelenting psychological tension.</p>
@@ -129,7 +149,9 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZ-16-MevmttrXYh80xqe2WEell3LD7QxwCZDTA8VGw&s=10" alt="Interstellar">
+            <div class="img-container">
+                <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="Interstellar">
+            </div>
             <div class="details">
                 <h4>Interstellar</h4>
                 <p>Cosmic scale, non-linear time, and structural perfection.</p>
@@ -138,7 +160,9 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt0458352/" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmsHhSTfGEYzcc9SroE5FR8UtsqwpomqB8h5rvD0Y44w&s=10" alt="The Devil Wears Prada">
+            <div class="img-container">
+                <img src="https://m.media-amazon.com/images/M/MV5BZjQ3NDlhNGUtNmVhYi00M2RlLThjNjAtNDFiLThlMc1jODA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Devil Wears Prada">
+            </div>
             <div class="details">
                 <h4>The Devil Wears Prada</h4>
                 <p>Unapologetic standards, high fashion, and the art of the hustle.</p>
@@ -147,7 +171,9 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt3228774/" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsD8s5IyR7fInYb9XmUhebkXjZBYMhT5zkZavM8wjemw&s" alt="Cruella">
+            <div class="img-container">
+                <img src="https://m.media-amazon.com/images/M/MV5BOWI5YTUxOWEtZmRiZS00ZmQxLWE2NzctYTRiODA2NzE1ZjczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg" alt="Cruella">
+            </div>
             <div class="details">
                 <h4>Cruella</h4>
                 <p>Dark glam, chaotic genius, and sharp visual reinvention.</p>
@@ -156,7 +182,9 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt1343092/" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eT80aIEYCvJAg2m13GWyq5TQqhs1KTJ8iHyYFf4yCQ&s=10" alt="The Great Gatsby">
+            <div class="img-container">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTkxNTk1ODcxNl5BMl5BanBnXkFtZTcwMDIxMTgzOQ@@._V1_FMjpg_UX1000_.jpg" alt="The Great Gatsby">
+            </div>
             <div class="details">
                 <h4>The Great Gatsby</h4>
                 <p>Unapologetic opulence, tragic obsession, and pristine art deco design.</p>
@@ -165,7 +193,9 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt1670345/" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaI-6A9IaAfv00w6AxFhILzR2lUFucb9iTMe9XTvFI0A&s=10" alt="Now You See Me">
+            <div class="img-container">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTY0NDY3MDMxN15BMl5BanBnXkFtZTcwOTM5NzMzOQ@@._V1_FMjpg_UX1000_.jpg" alt="Now You See Me">
+            </div>
             <div class="details">
                 <h4>Now You See Me</h4>
                 <p>High-stakes misdirection, theatrical flair, and clever puzzle-solving.</p>
@@ -176,7 +206,9 @@
         <h3>Wanderlust & Bucket List</h3>
 
         <a class="card" href="https://www.google.com/maps/place/Tokyo,+Japan" target="_blank" rel="noopener noreferrer">
-            <img https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOOHXxTVo9QqeDgZAvvFYMBsdwvZ2MuhzD8BAJVgUzg&s=10" alt="Tokyo, Japan">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600&auto=format&fit=crop" alt="Tokyo, Japan">
+            </div>
             <div class="details">
                 <h4>Tokyo, Japan</h4>
                 <p>Neon architecture, futuristic tech, and hyper-structured urban culture.</p>
@@ -185,7 +217,9 @@
         </a>
 
         <a class="card" href="https://www.google.com/maps/place/Milan,+Italy" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaaL_7xzNueqbuH2oO70jSb1CboBTBtMTqwd7OKFtdIw&s=10p" alt="Milan, Italy">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1513581166391-887a96ddeafd?q=80&w=600&auto=format&fit=crop" alt="Milan, Italy">
+            </div>
             <div class="details">
                 <h4>Milan, Italy</h4>
                 <p>High fashion, architectural symmetry, and timeless Italian luxury.</p>
@@ -194,7 +228,9 @@
         </a>
 
         <a class="card" href="https://www.google.com/maps/place/Reykjav%C3%ADk,+Iceland" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGo5nYlCxnOarexnZ5vVvdsdhfe00zj2LrMM0hXZDbg&s=10" alt="Reykjavik, Iceland">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?q=80&w=600&auto=format&fit=crop" alt="Reykjavik, Iceland">
+            </div>
             <div class="details">
                 <h4>Reykjavik, Iceland</h4>
                 <p>Black sand beaches, northern lights, and atmospheric solitude.</p>
@@ -203,7 +239,9 @@
         </a>
 
         <a class="card" href="https://www.google.com/maps/place/New+York,+NY" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoB4pRG4F4crx4PXqHis15NbF5wueomfMFIGnuK_n1oA&s=10" alt="New York City">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=600&auto=format&fit=crop" alt="New York City">
+            </div>
             <div class="details">
                 <h4>New York City</h4>
                 <p>Unapologetic hustle, iconic skylines, and high-energy nights.</p>
@@ -214,7 +252,9 @@
         <h3>Soundtrack & On Repeat</h3>
 
         <a class="card" href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPmTsUxg-rlPT_1OjRZTj7VSEHRG3f2Cz94SO6PL8IQ&s=10" alt="Lana Del Rey">
+            <div class="img-container">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb23b0a21235e165d33682977d" alt="Lana Del Rey">
+            </div>
             <div class="details">
                 <h4>Lana Del Rey</h4>
                 <p>Cinematic melancholia, vintage romance, and lush orchestrations.</p>
@@ -223,7 +263,9 @@
         </a>
 
         <a class="card" href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEalubL0x15AWjN0hMINQLNp0XgJzfpj_3sJXXzL6-RQ&s" alt="Billie Eilish">
+            <div class="img-container">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb5a00969a4698c3132a15fbb0" alt="Billie Eilish">
+            </div>
             <div class="details">
                 <h4>Billie Eilish</h4>
                 <p>Whispered intimacy, raw bass, and dark alternative pop.</p>
@@ -232,7 +274,9 @@
         </a>
 
         <a class="card" href="https://open.spotify.com/artist/1WgXqy2Dd70QQOU7Ay074N" target="_blank" rel="noopener noreferrer">
-            <img src="data:image/jpeg;base64,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" alt="AURORA">
+            <div class="img-container">
+                <img src="https://i.scdn.co/image/ab6761610000e5eb8e2a1498b8ed638a166928e4" alt="AURORA">
+            </div>
             <div class="details">
                 <h4>AURORA</h4>
                 <p>Ethereal synth-folk, primal rhythms, and mystical storytelling.</p>
@@ -241,7 +285,9 @@
         </a>
 
         <a class="card" href="https://open.spotify.com/artist/1moxjboGR7GNWYIMWsRjgG" target="_blank" rel="noopener noreferrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9IlxZsfc2mi5270BeHClKCw6yxOVcGiJzwpOF_ODO8Q&s" alt="Florence + The Machine">
+            <div class="img-container">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebb5f891b072e27e8a9314d334" alt="Florence + The Machine">
+            </div>
             <div class="details">
                 <h4>Florence + The Machine</h4>
                 <p>Dramatic vocals, baroque pop, and poetic intensity.</p>
