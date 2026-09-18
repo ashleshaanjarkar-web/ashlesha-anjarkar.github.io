@@ -21,43 +21,30 @@
         .card {
             display: flex;
             align-items: center;
-            gap: 16px;
-            margin-bottom: 16px;
+            gap: 15px;
+            margin-bottom: 20px;
             text-decoration: none;
             color: inherit;
-            padding: 10px 12px;
+            padding: 8px;
             border-radius: 10px;
-            background-color: #ffffff;
-            border: 1px solid #eaeaea;
-            transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            transition: background-color 0.2s ease, transform 0.2s ease;
         }
 
         .card:hover {
-            background-color: #f7f7f7;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Image Frame - Small, uncropped display */
-        .card .img-container {
-            width: 72px;
-            height: 72px;
-            min-width: 72px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             background-color: #f0f0f0;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid #e0e0e0;
+            transform: translateY(-2px);
         }
 
-        /* Displays the full image inside the frame without cropping */
+        /* Image styles fixed to display full image without cropping */
         .card img {
-            max-width: 100%;
-            max-height: 100%;
+            width: 120px;
+            height: 120px;
             object-fit: contain;
-            display: block;
+            background-color: #fff;
+            border-radius: 8px;
+            box-sizing: border-box;
+            border: 1px solid #eaeaea;
+            padding: 4px;
         }
 
         /* Text block on the right */
@@ -66,21 +53,21 @@
         }
 
         .details h4 {
-            margin: 0 0 4px 0;
-            font-size: 1rem;
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
             color: #111;
         }
 
         .details p {
             margin: 0;
             color: #555;
-            font-size: 0.88rem;
+            font-size: 0.95rem;
         }
 
         .details .link-label {
             display: inline-block;
             margin-top: 6px;
-            font-size: 0.78rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             color: #0066cc;
@@ -93,7 +80,7 @@
         }
 
         h3 {
-            margin-top: 32px;
+            margin-top: 30px;
             border-bottom: 2px solid #eee;
             padding-bottom: 8px;
         }
@@ -116,9 +103,7 @@
         <h3>Films</h3>
 
         <a class="card" href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" alt="Inception">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjdhunAp1tS2_sCHf1rZUqd94v0mLoq2nHrAYFoyBWlg&s=10" alt="Inception">
             <div class="details">
                 <h4>Inception</h4>
                 <p>Complex logic, structural perfection, and pure visual depth.</p>
@@ -127,9 +112,7 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt1285016/" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://m.media-amazon.com/images/M/MV5BOGUyZDUxZjUtMmIzMC00MzlmLTg4MGItZWJmMzBhZjE0Mjc1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Social Network">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkPBxhQ3Rbr5OCRZEnuXghj6X2uYkBvTl5ZVkRvU1cxxEdPw2E4F7UYI&s=10" alt="The Social Network">
             <div class="details">
                 <h4>The Social Network</h4>
                 <p>Speed, raw ambition, and brilliant intellectual architecture.</p>
@@ -138,9 +121,7 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt15398776/" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_FMjpg_UX1000_.jpg" alt="Oppenheimer">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZw_Fuuti9hPEculiwVo7aAHmzqjsr8sN1tQs9C-YTWg&s=10" alt="Oppenheimer">
             <div class="details">
                 <h4>Oppenheimer</h4>
                 <p>Quantum physics, classified architecture, and unrelenting psychological tension.</p>
@@ -149,9 +130,7 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="Interstellar">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZ-16-MevmttrXYh80xqe2WEell3LD7QxwCZDTA8VGw&s=10" alt="Interstellar">
             <div class="details">
                 <h4>Interstellar</h4>
                 <p>Cosmic scale, non-linear time, and structural perfection.</p>
@@ -160,9 +139,7 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt0458352/" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://m.media-amazon.com/images/M/MV5BZjQ3NDlhNGUtNmVhYi00M2RlLThjNjAtNDFiLThlMc1jODA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" alt="The Devil Wears Prada">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmsHhSTfGEYzcc9SroE5FR8UtsqwpomqB8h5rvD0Y44w&s=10" alt="The Devil Wears Prada">
             <div class="details">
                 <h4>The Devil Wears Prada</h4>
                 <p>Unapologetic standards, high fashion, and the art of the hustle.</p>
@@ -171,9 +148,7 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt3228774/" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://m.media-amazon.com/images/M/MV5BOWI5YTUxOWEtZmRiZS00ZmQxLWE2NzctYTRiODA2NzE1ZjczXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg" alt="Cruella">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsD8s5IyR7fInYb9XmUhebkXjZBYMhT5zkZavM8wjemw&s" alt="Cruella">
             <div class="details">
                 <h4>Cruella</h4>
                 <p>Dark glam, chaotic genius, and sharp visual reinvention.</p>
@@ -182,9 +157,7 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt1343092/" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://m.media-amazon.com/images/M/MV5BMTkxNTk1ODcxNl5BMl5BanBnXkFtZTcwMDIxMTgzOQ@@._V1_FMjpg_UX1000_.jpg" alt="The Great Gatsby">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eT80aIEYCvJAg2m13GWyq5TQqhs1KTJ8iHyYFf4yCQ&s=10" alt="The Great Gatsby">
             <div class="details">
                 <h4>The Great Gatsby</h4>
                 <p>Unapologetic opulence, tragic obsession, and pristine art deco design.</p>
@@ -193,9 +166,7 @@
         </a>
 
         <a class="card" href="https://www.imdb.com/title/tt1670345/" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://m.media-amazon.com/images/M/MV5BMTY0NDY3MDMxN15BMl5BanBnXkFtZTcwOTM5NzMzOQ@@._V1_FMjpg_UX1000_.jpg" alt="Now You See Me">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaI-6A9IaAfv00w6AxFhILzR2lUFucb9iTMe9XTvFI0A&s=10" alt="Now You See Me">
             <div class="details">
                 <h4>Now You See Me</h4>
                 <p>High-stakes misdirection, theatrical flair, and clever puzzle-solving.</p>
@@ -206,9 +177,7 @@
         <h3>Wanderlust & Bucket List</h3>
 
         <a class="card" href="https://www.google.com/maps/place/Tokyo,+Japan" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600&auto=format&fit=crop" alt="Tokyo, Japan">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOOHXxTVo9QqeDgZAvvFYMBsdwvZ2MuhzD8BAJVgUzg&s=10" alt="Tokyo, Japan">
             <div class="details">
                 <h4>Tokyo, Japan</h4>
                 <p>Neon architecture, futuristic tech, and hyper-structured urban culture.</p>
@@ -217,9 +186,7 @@
         </a>
 
         <a class="card" href="https://www.google.com/maps/place/Milan,+Italy" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://images.unsplash.com/photo-1513581166391-887a96ddeafd?q=80&w=600&auto=format&fit=crop" alt="Milan, Italy">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaaL_7xzNueqbuH2oO70jSb1CboBTBtMTqwd7OKFtdIw&s=10" alt="Milan, Italy">
             <div class="details">
                 <h4>Milan, Italy</h4>
                 <p>High fashion, architectural symmetry, and timeless Italian luxury.</p>
@@ -228,9 +195,7 @@
         </a>
 
         <a class="card" href="https://www.google.com/maps/place/Reykjav%C3%ADk,+Iceland" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?q=80&w=600&auto=format&fit=crop" alt="Reykjavik, Iceland">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGo5nYlCxnOarexnZ5vVvdsdhfe00zj2LrMM0hXZDbg&s=10" alt="Reykjavik, Iceland">
             <div class="details">
                 <h4>Reykjavik, Iceland</h4>
                 <p>Black sand beaches, northern lights, and atmospheric solitude.</p>
@@ -239,9 +204,7 @@
         </a>
 
         <a class="card" href="https://www.google.com/maps/place/New+York,+NY" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=600&auto=format&fit=crop" alt="New York City">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoB4pRG4F4crx4PXqHis15NbF5wueomfMFIGnuK_n1oA&s=10" alt="New York City">
             <div class="details">
                 <h4>New York City</h4>
                 <p>Unapologetic hustle, iconic skylines, and high-energy nights.</p>
@@ -252,9 +215,7 @@
         <h3>Soundtrack & On Repeat</h3>
 
         <a class="card" href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://i.scdn.co/image/ab6761610000e5eb23b0a21235e165d33682977d" alt="Lana Del Rey">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdPmTsUxg-rlPT_1OjRZTj7VSEHRG3f2Cz94SO6PL8IQ&s=10" alt="Lana Del Rey">
             <div class="details">
                 <h4>Lana Del Rey</h4>
                 <p>Cinematic melancholia, vintage romance, and lush orchestrations.</p>
@@ -263,9 +224,7 @@
         </a>
 
         <a class="card" href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://i.scdn.co/image/ab6761610000e5eb5a00969a4698c3132a15fbb0" alt="Billie Eilish">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEalubL0x15AWjN0hMINQLNp0XgJzfpj_3sJXXzL6-RQ&s" alt="Billie Eilish">
             <div class="details">
                 <h4>Billie Eilish</h4>
                 <p>Whispered intimacy, raw bass, and dark alternative pop.</p>
@@ -274,9 +233,7 @@
         </a>
 
         <a class="card" href="https://open.spotify.com/artist/1WgXqy2Dd70QQOU7Ay074N" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://i.scdn.co/image/ab6761610000e5eb8e2a1498b8ed638a166928e4" alt="AURORA">
-            </div>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXFxsbGBcYFxcYFxgYFxoXGB8XFxoYHSggGBslHRgWITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGy0lICUtLS0rLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tNS0tLf/AABEIAPwAyAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQMGAQIHAP/EAD4QAAECBAMECQIDBwUAAwAAAAECEQADBCEFEjFBUWFxBhMigZGhscHwMtFCYuEHFCNSgpLxM3KissIVJEP/xAAaAQACAwEBAAAAAAAAAAAAAAACAwABBAUG/8QAKBEAAgICAgIDAAAHAQAAAAAAAAECEQMhEjEEQRMiURQyYXGBkbFC/9oADAMBAAIRAxEAPwDl4UXtEWYlbGAxWqBMTy1uQfGENUZeDXZPUzkpSz3MBU4sS8exGc5YDnAyUHKTFpWg1CkELnnfHpIMwskwThlCkpzLhtLky5YfSJpAyklpAiKbILhzDGQsSw4GsBHEZeYB9Y0r8TKVAC8BWweEmroNIzHMbc4EWkF37oCmVq5jFmA1gpV2IgWqJxfSMdSCXVYQPOqUFTAlhGKqUuZMYCw2ZgH5bYmTgapcC4GhIcDeQDdt48oOMFVjOP6bzKxKUQrmTAVJOwjzBP6Qb1AIyrWka7FefZeN52HWQGBDEuNCHOkWml2RUuzWZVhICUXeBgkPdBvBaJcuWcyhpBcmoQoFTWhLlx6QOvQFRpUDuEMMWxsdWJbXaBDMQsskx5GHBayV6CAai5KU/QcbT2CU0xRQVPC4TFZrkw8XhaCpkqaFtTQKSvL5xoxzg26DUaMKWQzQfJmKCXOsDika76RJ+9gi5gZfboD+wRIqCtQTpE1bgEwDOFPbRoDp1DMDFmNWEoABdxGbLowOS4Dse1spKZqg4FiIzFiVTyVAnaY9Dv4iP4XbWkKataFWGogmppQiWFgvzhUuT+IxmfVkjKNIc420Z1HVIi63MeZhzLoswCUjY5hRFysMyucqrqpJKpQzYdJsQx0MTPk+gU426Z7Wc1L02lI4vT9v1hPia51k5aT0oN23a8A8H1uY7yR1bJqJ0eH0Qn5W1JgK9I6kUoCVkFvVpQhL4u4I0D+H0gtR1b8P0m3c56+08aCpytWv8v4j3jLqfS/6Yg+aK/WpTNSz3gJ46t7xmaVnQ4HnZvtE8tHl15e24iB90P9u2u/uI2k05Jt6+W9u20T4lI5gE9z3L/eAOTjL/AHJ3CjG1yNCO5b7wZfS2Xy4b+6/qIPKSTq3F82Z/vEpJ9UeP6QjI0C528P0hniy/r28r3/eN0lI7R4+v2jeq4f7d30777w00BvLhF5fV5u220FSSa3v2nvuI7Q+N333A8N9o1wZ/q3fO/lCgL0t/jI5kRnhb7q7jD+n33+0Y4c+9v77wGga6e4/nC/Ef+s7eKIn1+aPKI+H29oI2U9IHz/AJjHq4f6r+sS+N90d8L5a5y609a6WBYWwL8d97Q1p237rQv5yQz928L42wA/WJt1h1bOq6aZ2iX/pT87jT3iaNfD+/wBv0hmK2/f94+hGg+d/pA7pB4+d9x/vE0j2H077a+kP6v+v0jKz4/Zp8ohQGkOOnD+e0D4Xf3/ADheR2jbf3+kfS+t9/0h0C3hvv8AKIt0Xn8vf0hx5X+/zEaRfv8AnDohXv2v6+XvF0qfX+/SK11e3b+e0XT46+f7w0G6zI89x/vEudfA+3vCLv9ofzGv5a422jGk/fflBpaM76Q2l5Pz4d4Jp9r+h/uIAluR/r/vE6Q1uv9o0K+h9v+K8v3Efpj48v5+scw4/P9o7X1/f8o0G6uofLftHqeN1+kfJj93/AMR6n6fL3jRk3V3j2P7/vHa/h+/pHvH32/WK3GjVPHc9kUvB6wSrZ/tFqwyrVLUrKNnEKehM0vUSg6aK29I6DgaU2Y5e0q136bM8c6f+kZskbVmmw3Jc0q7WzO+j3/AEhdSSTlbQZz6f8AuJjWk7pIubOPaG0h9v0hfRrzG9p7fP5R2X9Yh5f6r/wAIwA+9z22haBqV4114fP5RoR2/P3j1YfL6x5c+v7wNBYGnnH1T3+ffz+ke8Pvv6/vH6vf3/m8C0d02J17/AOPtF4oW18Pffw+0Z2+fv+scV+XyvAQ+v7/pA0G+p37b/L7R55fd33+W8fp4d//AMxj1Ouv7fP3jaDTw/vv+8L8V+Xz+kdp+Xn/ADGNr9NtzsIGge8ff7Q6wqS8+Shq+0K1l8o7A/hR8Sly0k9q0k9yD8ojN9E8ftkujwUj36LqP+0fTf/AHOFv5p6W2Zz7X/mJqK7/iG0D3L/AI5j+w8oG4uWbI3ZifG239ow/wBq/X7+0I8Yl2B4v5cfflB7N6x5Y3gZ9rXg2iS6V3O4jYh0v2W529e8VStqK6Zq0oO9U5I4nS0U6rnvMlnM4UvMBuABsN8S+jOEl26k61l7/vDChrBvB9+MIVd12h04Xv5+0B8H5fb5wtU7M40qVbE1260W4bVpShWq0o1l0h2221hX4r+30eO4R948fT2hVz5rLpL64WJz3K1J1G99O6Ina9iR/U7R/Sj+Uf/AFj3n9ofzGPq/wAvvEe/ff8AeE2K0bH74+seV/v9ojf5/SPef3j9ozZqj1fP+Yy8/eKrfXfePcfn+0WbNGr8/r948r5+f0jLff8/tHlf5faM2aM9v309o2t284zaPv8AP3jyvv8Az+sfM2Yrv+faPI7xla+337R4v8vhFjVmrPP7/wC8fKvt9oyXvv8A3+kdT9/y/vExo0/b5wO9jJylU2VNU7IqQoP+F2e0Jcf/AEXbW8LueIuB/wAZ+2YJd8nUn6bX5Q41HqN9L2aC5mHz6UqSlKkqSEq1W12Fj2bxbMP6Z5J/1eT/AMqJ89518Pj2jP8Avx+kR1M9Gg8P8/nFow6Yt0N/M427v7Rnhy7j8vtHqPnvf7Rka3M3qZg339u39Y2kTkp0u8NqN197wgw6f+ZPOUv8AVK5T5Q8r6F33FkgnbS1tfGK0qO1p5w/w54j1hri4bWk6s90NthpG1O6d1/1/rDFWpS4T299/OECn3v7/6xtT5vft/eK0V02/P+Yw75e63zH2gWvmlL4u5B9ofpS6Ljv8AT2hV0yK7p3v/AO+kW3D6uYv8yEpD27JvY+0K6eUsh7/y3hvhEwNmvZ05vC3tD4nK3M/L33+8K+sT49o5w7F7W9/vF4m99vtGf879/qY9Trfe39o1yL5eH/AC+8J6qpzTvZf5iZc1JPe+tt7wjrZnU51t/K27bQyvR/rOqWpTzEp7D2+u8M8B4aMvU+35QYp30H5X+0L6ebvP8AN/tFlK03M4/f8xvM58j3e9o2+vvpA9X8/n6x4Xm9zfe0aM2Jvvb0/aIq6aPvfzvHh8vjA9WvXz+kH1L7K61L3/AJx8w+ffmIjLft/z9Y8rv8/vF7bM3XWvG5iE1M3y+PveN2vf6fSJO+Pj3xYm0zZ81h4fTbe9okT8vd+8J8u3b+8aX77+sb00ZJ95f2j6r99vnEcbP3vH9Xfe0Zo+9/mI6b5z9N/hE+GZl2sW/rFaw+c5d9/n7wya/YFq0dE6HTh/wD8n//Z" alt="AURORA">
             <div class="details">
                 <h4>AURORA</h4>
                 <p>Ethereal synth-folk, primal rhythms, and mystical storytelling.</p>
@@ -285,9 +242,7 @@
         </a>
 
         <a class="card" href="https://open.spotify.com/artist/1moxjboGR7GNWYIMWsRjgG" target="_blank" rel="noopener noreferrer">
-            <div class="img-container">
-                <img src="https://i.scdn.co/image/ab6761610000e5ebb5f891b072e27e8a9314d334" alt="Florence + The Machine">
-            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9IlxZsfc2mi5270BeHClKCw6yxOVcGiJzwpOF_ODO8Q&s" alt="Florence + The Machine">
             <div class="details">
                 <h4>Florence + The Machine</h4>
                 <p>Dramatic vocals, baroque pop, and poetic intensity.</p>
